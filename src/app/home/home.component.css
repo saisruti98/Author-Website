@@ -1,0 +1,209 @@
+.home {
+    height: 100vh;
+    
+    background-image: url("https://storage.googleapis.com/myweb-68fd8.appspot.com/Background_pic.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size:cover;
+   
+  }
+@media only screen and (max-width: 600px) {
+  .h{
+    color:ghostwhite;
+    font-size: 24px;
+    text-align:center;
+    top: 180px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 22px;
+    text-align:right;
+    top: 170px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .h{
+    color:ghostwhite;
+    font-size: 34px;
+    text-align:center;
+    top: 180px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 22px;
+    text-align:right;
+    top: 170px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .h{
+    color:ghostwhite;
+    font-size: 44px;
+    text-align:center;
+    top: 180px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 26px;
+    text-align:right;
+    top: 170px;
+    /*left:58%;*/
+    position:relative;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .h{
+    color:ghostwhite;
+    font-size: 35px;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 25px;
+    text-align:right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .h{
+    color:ghostwhite;
+    font-size: 41px;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 28px;
+    text-align:right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+  
+}
+@media screen and (min-width: 1400px) {
+  .h{
+    color:ghostwhite;
+    font-size: 45px;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 30px;
+    text-align:right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .h{
+    color:ghostwhite;
+    font-size: 50px;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 35px;
+    text-align:right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .h{
+    color:ghostwhite;
+    font-size: 58px;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Merienda';
+    font-weight: bold;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+  }
+  .j{
+    color:ghostwhite;
+    font-size: 40px;
+    text-align:right;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family:'Cormorant Upright';
+    font-weight: bold;
+  }
+}

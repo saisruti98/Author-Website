@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" [ngClass]="{ 'current-section1': navbar === 'black' }">
+  <a class="navbar-brand" (click)="scrollTo('section1')" [ngClass]="{ 'active': currentSection === 'section1' }">Annapurna Sharma</a>
+    <button class="navbar-toggler" type="button" (click)="collapse()" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div *ngIf="!isCollapsed" class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto" >
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('section1')" [ngClass]="{ 'active': currentSection === 'section1' }">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('section2')" [ngClass]="{ 'active': currentSection === 'section2' }">ABOUT HER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('section3')" [ngClass]="{ 'active': currentSection === 'section3' }">WORKS</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+
+
+
+<div id="parentDiv" (scroll)="onWindowScroll();">
+  <div id="section1" >
+    <app-home></app-home>
+  </div>
+  <div id="section2">
+    <br><br><br>
+    <app-about></app-about>
+  </div>
+  <div id="section3" >
+    <br><br><br>
+    <app-works></app-works>
+  </div>
+</div>
+<br/>
+<footer class="py-1">
+  <div class="container text-center">
+    <a href="https://www.linkedin.com/in/annapurna-sharma-5a666764" class="fa fa-linkedin"></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=annapurnasharma@gmail.com" class="fa fa-envelope"></a>
+    <a href="https://twitter.com/annapurnash?t=zwUQu-hKa5cLbCzVY-S5jA&s=08" class="fa fa-twitter"></a> <br><br>
+    <p class="footer-font">ANNAPURNA SHARMA</p>
+    <p class="title-font">Storyteller. Poet. Editor</p>
+  </div>
+  <!-- /.container -->
+</footer>
+<router-outlet></router-outlet>

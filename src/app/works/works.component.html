@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">Works</h2><br>
+    </div>
+    <div class="row" >      
+        <div @animation class="col-lg-4 col-md-8 col-sm-8 col-12 mb-4" *ngFor="let i of (image | imageFilter:filterBy)">
+            <img class="portfolio-item mx-auto d-block" src="{{i.url}}" alt="..." data-toggle="modal" [attr.data-target]="'#a' + i.id"/>
+            <div class="modal fade" id="a{{i.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <i class="fas fa-times fa-lg close-modal ml-auto" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
+                    <h2 class="modal-title align-self-center" id="exampleModalLabel">{{i.name}}</h2>
+                    
+                    <div class="modal-body">
+                      
+                      <div class="container">
+                        <div class="row">
+            
+                          <div class="col-lg-12 ">
+                            <img class="img-fluid mx-auto d-block" src="{{i.url}}" alt="..."/>
+                          </div>  
+            
+                          <div class="col-lg-12">
+                            <br>
+                            <p class="book-dscp">{{i.para}}</p>
+                            <a href="{{i.lnk}}"><i class="lnk">Check Here</i></a>
+                          </div>
+            
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class= "feature container-fluid" (scroll)="onWindowScroll();">
+      <div class="row">
+      <div [@story]="enable" class="story col-lg-11 col-sm-24 col-24 mb-4" id="story">
+        <h3 class="heading text-center">Short Stories</h3>
+        <ul>
+          <li *ngFor="let i of story">
+            <div>{{i.bname}},<a href="{{i.url}}"><i class="asd"> {{i.name}}</i></a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-2"></div>
+      <div [@poems]="enable1" class="poem col-lg-11 col-sm-24 col-24 mb-4" id="poem">
+        <h3 class="heading text-center">Poems</h3>
+        <ul>
+          <li *ngFor="let i of poem">
+            <!--<a href="#" class="text-black"><i class="asd">{{i.name}}</i>, {{i.bname}}</a>-->
+            <div>{{i.bname}},<a href="{{i.url}}"><i class="asd"> {{i.name}}</i></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div><br><br>
+
+    <h3 class="awards text-center">Awards & Accolades</h3><br>
+    <div id="multi-item-example" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" data-interval="50000">
+          <img src="https://storage.googleapis.com/myweb-68fd8.appspot.com/Award-1.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="https://storage.googleapis.com/myweb-68fd8.appspot.com/Award-2.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="https://storage.googleapis.com/myweb-68fd8.appspot.com/Award-3.jpg">
+        </div>
+      </div>
+    </div>
+    <br><br>
+</div>
